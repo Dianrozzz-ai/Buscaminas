@@ -1,0 +1,48 @@
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    gap: 1px;
+    margin: 20px auto;
+    width: 310px;
+}
+
+.board-cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #eee;
+}
+
+.board-cell.revealed {
+    background-color: #fff;
+}
+
+.board-cell.mine {
+    background-color: red;
+}
+
+#status {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#scoreboard {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 300px;
+}
+
+#scoreboard th, #scoreboard td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#login-container, #scoreboard-container{
+    text-align: center;
+    margin-top: 50px;
+}
